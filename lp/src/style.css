@@ -21,13 +21,12 @@ nav {
   gap: 2vw;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   animation: deCima 2s linear;
-  z-index: 10; /* Adicionado para garantir que o menu fique por cima de tudo */
+  z-index: 10; 
 }
 
-/* 1. CORRIGIDO: Nome adicionado à animação */
 @keyframes deCima {
   0% {
-    transform: translateY(-50px); /* Mudado para -50px para realmente vir de cima */
+    transform: translateY(-50px); 
     opacity: 0;
   }
   100% {
@@ -128,6 +127,7 @@ section {
   align-items: center;
   text-align: left;
   justify-content: center;
+  min-height: 60vh;
   flex-direction: column;
 }
 
@@ -136,6 +136,108 @@ section {
   height: 315px;
   box-shadow: 0px 3px 15px #090909;
   border-radius: 10px;
+}
+
+.s5{
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.formulario{
+  background-color: #090909;
+  color: #ffff;
+  box-shadow: 0px 3px 10px #090909;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 10px;
+  gap: 10px;
+}
+
+.formulario label {
+  width: 100%;
+  margin-bottom: -10px;
+}
+
+.formulario input{
+  padding: 10px;
+  border: none;
+  background: transparent;
+  color: white;
+  border-bottom: 2px solid #ffff;
+  width: 100%;
+}
+
+.formulario input:focus{
+  outline: none;
+  color: cornflowerblue;
+  border-bottom: 2px solid cornflowerblue;
+}
+ 
+textarea{
+  max-width: 250px;
+  min-width: 250px;
+  min-height: 150px;
+  max-height: 150px;
+  padding: 10px;
+  border: none;
+  border-radius: 2px solid white;
+  background: transparent;
+  color: white;
+}
+
+button{
+  border: none;
+  border-radius: 5px;
+  border: 2px solid white;
+  padding: 10px;
+  background: transparent;
+  color: white;
+  transition: all 200ms linear;
+  width: 100%;
+}
+
+button:hover{
+  background: white;
+  color: #090909;
+  cursor: pointer;
+}
+
+a{
+  text-decoration: none;
+}
+
+.card{
+  background-color: cornflowerblue;
+  color: white;
+  font-size: 20px;
+  width: 300px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0px 3px 10px #090909;
+  
+}
+
+.card img{
+  width: 100%;
+  height: auto;
+}
+
+.textCard{
+  padding: 20px;
+}
+
+.s3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
 }
 
 footer {

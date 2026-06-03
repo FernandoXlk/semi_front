@@ -18,19 +18,16 @@
             <img src="../icons/home.png" alt="Home">
              <p class="navWords">Home</p>
         </span>
-         <span class="navItem" onclick="navTo('s1')">
-            <img src="../icons/banner.png" alt="Banner">
-            <p class="navWords">Banner</p>
         </span>
-        <span class="navItem" onclick="navTo('s1')">
+        <span class="navItem" onclick="navTo('s2')">
             <img src="../icons/cardIcon.png" alt="Products">
             <p class="navWords">Cards</p>
         </span>
-        <span class="navItem" onclick="navTo('s1')">
+        <span class="navItem" onclick="navTo('s4')">
             <img src="../icons/videosIcon.png" alt="video">
             <p class="navWords">Videos</p>
         </span>
-        <span class="navItem" onclick="navTo('s1')">
+        <span class="navItem" onclick="navTo('s5')">
             <img src="../icons/phone.png" alt="Contact">
             <p class="navWords">Contato</p>
         </span>
@@ -49,16 +46,44 @@
       </section>
 
       <section id="s3" class="s3">
-        <h1>Cards</h1>
+        <div class="card">
+          <img src="../images/tobeyImage.jpg" alt="">
+          <div class="textsCard">
+            <h4>Título</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium distinctio nemo neque facilis cum eligendi inventore pariatur. Hic nesciunt adipisci explicabo sunt, optio similique illum dignissimos cumque excepturi exercitationem aperiam!</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="../images/TomImage.jpg" alt="">
+          <div class="textsCard">
+            <h4>Título</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium distinctio nemo neque facilis cum eligendi inventore pariatur. Hic nesciunt adipisci explicabo sunt, optio similique illum dignissimos cumque excepturi exercitationem aperiam!</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="../images/Andrewimage.webp" alt="">
+          <div class="textsCard">
+            <h4>Título</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium distinctio nemo neque facilis cum eligendi inventore pariatur. Hic nesciunt adipisci explicabo sunt, optio similique illum dignissimos cumque excepturi exercitationem aperiam!</p>
+          </div>
+        </div>
+        
       </section>
 
       <section id="s4" class="s4">
         <iframe class="video" src="https://www.youtube.com/embed/7FFGIqNHV1g?si=ee2YIU8LCS6cIh6j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <h1>Vídeos</h1>
       </section>
 
       <section id="s5" class="s5">
-        <h1>Contato</h1>
+        <div class="formulario">
+          <label for="nome">Nome </label>
+          <input type="text" id="nome" placeholder="insira seu nome">
+          <label for="assunto">assunto</label>
+          <textarea name="assunto" placeholder="insira sua mensagem"></textarea>
+          <button onclick="enviar()">ENVIAR</button>
+        </div>
       </section>
     </main>
 
